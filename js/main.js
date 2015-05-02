@@ -23,7 +23,7 @@ $(window).load(function(){
 	});
 
 	//centrage vertical dynamique
-    $('.basic-block  img, .basic-block .description, .vertical-aligned').each(function(){
+    $('.centred-block .description, .basic-block  img, .basic-block .description, .vertical-aligned').each(function(){
         var parentHeight = $(this).parent().outerHeight(true);
         var elemHeight = $(this).outerHeight(true);
         var padding = parentHeight - elemHeight;
