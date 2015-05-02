@@ -1,0 +1,184 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+html,
+html * {
+  font-family: 'Lato', sans-serif !important;
+}
+html,
+body,
+.page-container {
+  width: 100%;
+  height: 100%;
+}
+#header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+#header .header-top {
+  height: 50px;
+  padding: 15px 30px 0 30px;
+}
+#header .header-top .main-nav {
+  width: 100%;
+}
+#header .header-top .main-nav ul {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+  margin-bottom: 0;
+  position: relative;
+  top: 10px;
+}
+#header .header-top .main-nav ul li {
+  float: left;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #d2000e;
+  padding-left: 25px;
+}
+#header .header-top .main-nav ul li a {
+  color: #d2000e;
+  transition: all 0.2s;
+  text-decoration: none !important;
+}
+#header .header-top .main-nav ul li.active a,
+#header .header-top .main-nav ul li:hover a,
+#header .header-top .main-nav ul li:focus a {
+  text-decoration: none;
+  border-bottom: 3px solid #d2000e;
+}
+.panels-nav {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+}
+.panels-nav a {
+  text-decoration: none !important;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/panel_nav_background_off.png);
+  color: #d2000e;
+  font-size: 14px;
+  line-height: 30px;
+}
+.panels-nav a:hover,
+.panels-nav a.active {
+  background-image: url(../img/panel_nav_background_on.png);
+  color: #fff;
+}
+.page-panel {
+  height: 100%;
+  max-height: 100%;
+  padding-top: 50px;
+}
+.page-panel .basic-block {
+  height: 100%;
+  width: 100%;
+}
+.page-panel .basic-block img {
+  max-height: 100%;
+  max-width: 50%;
+}
+.page-panel .basic-block .description {
+  width: calc(50% - 80px);
+  font-size: 18px;
+  line-height: 26px;
+  margin: auto;
+}
+.page-panel .basic-block.image-on-left img,
+.page-panel .basic-block.image-on-left .description {
+  float: left;
+}
+.page-panel .basic-block.image-on-left .description {
+  padding-left: 30px;
+}
+.page-panel .basic-block.image-on-right img,
+.page-panel .basic-block.image-on-right .description {
+  float: right;
+}
+.page-panel .basic-block.image-on-right .description {
+  padding-right: 30px;
+}
+.page-panel .duo-block {
+  height: 100%;
+  width: 100%;
+}
+.page-panel .duo-block .first,
+.page-panel .duo-block .second {
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.page-panel .duo-block .first img,
+.page-panel .duo-block .second img {
+  height: 73%;
+}
+.page-panel .duo-block .first .description,
+.page-panel .duo-block .second .description {
+  height: 22%;
+  width: 90%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+.page-panel .centred-block {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.page-panel .centred-block img {
+  height: 85%;
+  display: inline-block;
+}
+.page-panel .centred-block .description {
+  height: 15%;
+  width: 90%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 26px;
+}
+#arrow-down {
+  position: absolute;
+  top: calc(100% - 45px);
+  left: calc(50% - 20px);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+#home-first-page {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/home_background.jpg);
+}
+#home-container {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  height: 100%;
+  padding: 5% 10% 0 10%;
+  width: 100%;
+  text-align: center;
+}
+#home-begin {
+  text-decoration: none !important;
+  color: #d2000e;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+}
+#home-begin:hover {
+  background-color: #d2000e;
+  color: #fff;
+  border: none;
+}
