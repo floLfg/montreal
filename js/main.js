@@ -29,8 +29,7 @@ $(window).load(function(){
         var padding = parentHeight - elemHeight;
         padding /= 2;
         
-        if (padding <= 0 && $(this).children().first()[0].nodeName != "P")
-            padding = 10;
+
         $(this).css('padding-top', padding+'px');
     });
 
