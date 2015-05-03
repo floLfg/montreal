@@ -28,6 +28,8 @@ $(window).load(function(){
         var elemHeight = $(this).outerHeight(true);
         var padding = parentHeight - elemHeight;
         padding /= 2;
+        if (padding > 0)
+            padding += 25;
         
 
         $(this).css('padding-top', padding+'px');

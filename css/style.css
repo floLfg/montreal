@@ -19,7 +19,7 @@ body,
 }
 #header .header-top {
   height: 50px;
-  padding: 15px 30px 0 30px;
+  padding: 15px 70px 0 30px;
 }
 #header .header-top .main-nav {
   width: 100%;
@@ -54,6 +54,8 @@ body,
   position: fixed;
   top: 80px;
   right: 20px;
+  max-height: calc(100% - 80px);
+  overflow: auto;
 }
 .panels-nav a {
   text-decoration: none !important;
@@ -77,6 +79,8 @@ body,
 .page-panel {
   height: 100%;
   max-height: 100%;
+  padding-right: 70px;
+  overflow: auto;
 }
 .page-panel .basic-block {
   height: 100%;
@@ -88,7 +92,6 @@ body,
   padding-left: 6px;
   margin-bottom:25px;
 }
-
 .page-panel .basic-block img {
   max-height: 100%;
   width: 70%;
@@ -109,7 +112,6 @@ body,
 }
 .page-panel .basic-block.image-on-left .description {
   padding-left: 30px;
-  padding-right: 80px;
 }
 .page-panel .basic-block.image-on-right img,
 .page-panel .basic-block.image-on-right .description {
@@ -161,7 +163,7 @@ body,
 }
 .page-panel .duo-block.portrait .first,
 .page-panel .duo-block.portrait .second {
-  width: calc(50% - 35px);
+  width: 50%;
 }
 .page-panel .duo-block.portrait .first .description{
   text-align: left;
@@ -197,12 +199,26 @@ body,
   line-height: 26px;
   float: left;
   padding-left: 30px;
-  padding-right: 70px;
+}
+.page-panel.text-block{
+  text-align: center;
+  padding-top: 90px;
+  background-color: #fff;
+  overflow: auto;
+}
+.page-panel.text-block p{
+  font-size: 18px;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.page-panel.text-block h1{
+  border: none;
 }
 #arrow-down {
   position: absolute;
   top: calc(100% - 45px);
-  left: calc(50% - 20px);
+  left: calc(50% - 55px);
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -220,7 +236,7 @@ body,
   background-color: #fff;
   top: 100%;
   height: 100%;
-  padding: 5% 10% 0 10%;
+  padding: 60px 30px 0 30px;
   width: 100%;
   text-align: center;
 }
@@ -235,3 +251,84 @@ body,
   color: #fff;
   border: none;
 }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1260px){
+  /* duo block */
+  .page-panel .duo-block.portrait .description {
+    position: absolute;
+    width: 419px;
+    padding-top: 0 !important;
+  }
+  .page-panel .duo-block.portrait .second .description {
+    right: 70px;
+  }
+  .page-panel .duo-block.portrait .description h1{
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    border-left: none;
+  }
+  .page-panel .duo-block.portrait .description p{
+    padding: 10px 20px;
+  }
+  .page-panel .duo-block.portrait .description h1,
+  .page-panel .duo-block.portrait .description p{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+  .page-panel .duo-block.portrait .first .description h1,
+  .page-panel .duo-block.portrait .first .description p{
+    border-right: 1px solid #eee;
+  }
+  /* fin duo block */
+
+  /* centred block */
+  .page-panel .centred-block{
+    text-align: center;
+  }
+  .page-panel .centred-block img{
+    display: inline-block;
+    float: right;
+  }
+  .page-panel .centred-block .description{
+    position: absolute;
+    right: 70px;
+    text-align: left;
+    max-width: 60%;
+    color: #fff;
+    padding-top: 50px !important;
+    max-height: 100% !important;
+    overflow: auto;
+  }
+  .page-panel .centred-block .description h1{
+    border-left: none;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .page-panel .centred-block .description p{
+    margin-bottom: 0;
+  }
+  .page-panel .centred-block .description h1,
+  .page-panel .centred-block .description p{
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 30px;
+  }
+  /* fin centred block */
+}
+
+@media only screen and (max-width: 910px){
+  .page-panel .duo-block.portrait img{
+    width: 100%;
+    height: auto !important;
+    float: left;
+  }
+  .page-panel .duo-block.portrait .description {
+    width: calc(50% - 35px);
+  }
+}
+
+/* FIN RESPONSIVE */
