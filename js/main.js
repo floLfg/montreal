@@ -31,7 +31,6 @@ $(window).load(function(){
         if (padding > 0)
             padding += 25;
         
-
         $(this).css('padding-top', padding+'px');
     });
 
